@@ -2,87 +2,59 @@
 
 ## Recovery authority
 
-This branch is a **checkpoint only**. It is not the frozen roadmap and must not be merged to `main` until the self-audit reaches a full fresh pass with no new material finding and the independent freeze review returns 0 BLOCKER / 0 MAJOR.
+This branch is a **checkpoint only**. It is not frozen and must not be merged to `main` until the self-audit reaches a full fresh pass with no new material finding and independent freeze review returns 0 BLOCKER / 0 MAJOR.
 
 - Repository: `jaydumisuni/Prime-Terminal`
 - Baseline `main`: `a58628a9b22dc62d5c2475534964648e39323303`
 - Checkpoint branch: `checkpoint/pt0-self-audit`
-- Current full checkpoint: **v158**
-- Current full-roadmap SHA-256: `f755b979a940a776c021dec29ddc40e18cf5cd69197b001fffa9b213a2ec93e3`
-- GitHub `main` remains untouched.
-- PT0 status: **UNFROZEN**.
+- Current exact full checkpoint: **v160**
+- SHA-256: `f8497ff4fc4b52cc3a24bdb6584bf3d8b514e3d661570e4710a59619c7f0b624`
+- PT0 status: **UNFROZEN**
+- `main` must remain untouched while this audit continues.
 
-## Full checkpoint recovery
+## Full-roadmap recovery
 
-The exact v158 Markdown is also persisted in the ChatGPT Library at:
+The exact v160 Markdown is persisted in the ChatGPT Library at:
 
-`/Prime-Terminal/ROADMAP-pre-freeze-v158.md`
+`/Prime-Terminal/ROADMAP-pre-freeze-v160.md`
 
-Library file id at checkpoint time: `file_00000000ca048211a734ec5265d91f63`
+Library file id at checkpoint time: `file_0000000018448207b5a943147e530d88`
 
-If this chat is lost, a new chat should recover this handoff first, then recover the exact full roadmap checkpoint before reasoning. Do not restart from the small `main` ROADMAP.
+A new chat must recover this handoff and the exact v160 file before reasoning. Do **not** restart from the small roadmap on `main` and do not reconstruct the candidate from summaries when the exact file is available.
 
-## Audit state
+## What v159/v160 closed
 
-The self-audit has progressed far beyond the repository baseline. The current contract set includes, among other things:
+- v159: PT4 user-facing prose claims were made mechanically accountable through `Development Session Restore / Attachment Authority v1` and `PT4 Feature Claim Matrix v1`; PT4 cannot pass while claimed restore/attachment/session features remain unproven.
+- v160: `/usr/bin/env`-class and other script resolver/interpreter chains gained `Interpreter Chain Consumption Binding v1`; a predicted PATH lookup cannot be recorded as the interpreter actually consumed, and chain collapse is allowed only with semantic-equivalence proof.
 
-- Prime Prompt input/session ownership and immutable submission context;
-- cross-dialect lexical equivalence and frozen Prime grammar;
-- canonical operation signatures, applicability and exact-runtime fallback;
-- direct executable argument/resource semantics;
-- executable object/content-generation launch binding;
-- Process Launch Context / ambient-inheritance isolation;
-- Runtime Bootstrap/startup-hook admission;
-- stateful runtime command-boundary/result framing;
-- Resource Identity Stability and approved projections;
-- session-context/environment projection and cross-boundary environment disclosure;
-- secret materialization + durable cleanup continuation;
-- route prerequisites + residual cleanup;
-- route candidate selection/ambiguity/effect dominance;
-- authenticated backend/provider/channel identity;
-- route-inherent effect/data-boundary semantics;
-- cross-boundary consent, including live consent leases and cleanup continuation;
-- dispatch/control idempotency and uncertainty semantics;
-- Host-reboot durable Attempt Journal/recovery;
-- late-result reconciliation and historical result-decoder continuity;
-- canonical result delivery/pagination/finalization;
-- process/runtime termination reporting;
-- foreground/background workload containment and Background I/O ownership;
-- terminal input/output/VT/escape/query-response security;
-- foreground input/output recording and notification privacy;
-- dynamic discovery evidence, rate/cost budgets, principal/session isolation and external-effect ledger;
-- semantic profile trust/applicability + isolated evaluator execution;
-- PT1.5 physical Core/authority-boundary proof requirements;
-- PT4 diagnostic/file-hint, signing/release, background metadata and tunnel authority;
-- PT5 assisted-plan, AI context/model boundary, external AI accounting and safe AI-response presentation;
-- versioned replay/migration rather than re-executing retired contracts.
+## Current audit frontier
 
-## Latest audit direction
+The next confirmed unresolved item is **Canonical Result Delivery field propagation**: contract 10G states that result-delivery mode, budgets, finalization/materialization state and continuation-effect envelope are evidence-bound, but v160 still does not carry the complete contract through Execution Requirement → Route Decision → Attempt Journal. Receipt already contains more of it. Close this propagation first, then continue a fresh adversarial read rather than assuming only this remains.
 
-Immediately before this checkpoint request, the active audit was continuing from v158 and had identified the next areas to keep attacking:
+Continue attacking at least:
 
-1. field propagation across Execution Requirement → Route Decision → Attempt Journal → Receipt;
-2. PT4 feature-to-proof-matrix coverage so prose features cannot pass unproven;
-3. script interpreter-chain actual-consumption binding;
-4. canonical result delivery/finalization evidence propagation;
-5. cross-contract lifecycle/recovery contradictions introduced by later corrections;
-6. dependency/phase exit gates and non-vacuous proof requirements;
-7. stale/discretionary wording and security-negative parity.
+1. Requirement → Route Decision → Journal → Receipt field parity for every late-added contract;
+2. lifecycle/crash/reboot/reattach interactions created by later corrections;
+3. provider/data-boundary/consent/recording/idempotency interactions;
+4. direct executable, script, runtime bootstrap and process-launch actual-consumption boundaries;
+5. canonical result completeness/paging/finalization and continuation effects;
+6. PT1/PT1.5 physical-proof parity with the real Prime P1 authority capabilities;
+7. PT2/PT3/PT3.5/PT4/PT5 dependency and non-vacuous exit gates;
+8. stale/discretionary wording, outcome-registry parity and security-negative coverage.
 
-Do **not** assume these are the only remaining issues. Run a fresh beginning-to-end adversarial pass.
+Do **not** assume these are the only remaining issues.
 
-## Required continuation procedure
+## Continuation procedure
 
-1. Recover this branch/handoff and the exact v158 full roadmap.
-2. Verify the SHA-256 before editing.
-3. Continue the self-audit locally/workspace-first; do not freeze merely because a prior pass looked clean.
-4. After each material correction, advance the candidate version and update this handoff/checkpoint.
-5. Run structural checks: unique contract numbering, broken contract references, outcome-registry ↔ phase-gate parity, dependency-row ↔ readable-dependency parity, and proof-gate coverage.
-6. Run an independent fresh adversarial read from the beginning after the last correction.
-7. Stop self-audit only when that full fresh pass yields **no new material BLOCKER/MAJOR-level contract, authority, lifecycle, dependency, evidence, proof-gate or security finding**.
-8. Only then hand the exact candidate to the independent reviewer.
-9. Freeze/merge only after independent review returns 0 BLOCKER / 0 MAJOR and all accepted findings are incorporated/re-reviewed.
+1. Recover exact v160 and verify the SHA-256.
+2. Make corrections locally/workspace-first; advance the candidate version for every material correction batch.
+3. Persist the new full candidate to `/Prime-Terminal/ROADMAP-pre-freeze-vNNN.md` and update this handoff after each checkpoint.
+4. Maintain structural checks: unique contract numbering, zero broken contract refs, authoritative outcome-registry ↔ PT0 phase-gate parity, dependency-row ↔ readable-dependency parity, and proof-gate coverage.
+5. After the last correction, run a fresh beginning-to-end adversarial pass from contract 1 through PT5—not a targeted scan of the latest edits.
+6. Self-audit stops only when that fresh pass yields **no new material BLOCKER/MAJOR-level contract, authority, lifecycle, dependency, evidence, proof-gate or security finding**.
+7. Only then hand the exact candidate to the independent reviewer.
+8. Freeze/merge only after independent review returns 0 BLOCKER / 0 MAJOR and accepted findings are corrected/re-reviewed.
 
 ## Repository safety
 
-Do not overwrite `main` from this checkpoint branch. This branch exists so another chat can recover the work if the current conversation is lost.
+Do not overwrite `main` from this checkpoint branch. This branch exists so any later chat can recover the exact audit state even if the current conversation is lost.
