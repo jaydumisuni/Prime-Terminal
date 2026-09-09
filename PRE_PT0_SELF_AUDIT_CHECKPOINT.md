@@ -3,43 +3,41 @@
 **Repository:** `jaydumisuni/Prime-Terminal`  
 **Canonical roadmap:** `ROADMAP.md` remains unchanged/unfrozen  
 **Checkpoint date:** 2026-09-09  
-**Latest workspace candidate:** `Prime-Terminal-ROADMAP-pre-freeze-v224.md`  
-**Candidate status:** `PRE-PT0 SELF-AUDIT CANDIDATE v224 — UNFROZEN`  
-**Candidate SHA-256:** `2e1a10e52c0c9ec5e19adb97b58bf9b04efcd0358b2054c2737a8f7d861ce572`  
-**Candidate size:** 824,209 bytes / 6,769 lines
+**Archived workspace candidate:** `Prime-Terminal-ROADMAP-pre-freeze-v231.md`  
+**Candidate status:** `PRE-PT0 SELF-AUDIT CANDIDATE v231 — UNFROZEN`  
+**Candidate SHA-256:** `b5b09e4333c4f0b8f31d058090a968a99578dafdcced78a627686c9915222364`  
+**Candidate size:** 845,039 bytes / 6,913 lines
 
 ## Purpose
 
-This file is a durable GitHub checkpoint for the ongoing Prime Terminal roadmap saturation audit. It does **not** freeze or replace `ROADMAP.md`, and it is not an independent-review verdict.
+This file is the durable GitHub checkpoint for the archived Prime Terminal roadmap saturation state reached in this session. It does **not** freeze or replace `ROADMAP.md`, and it is not an independent-review verdict.
 
-The workspace candidate remains authoritative for the continuing hostile/self-audit. The canonical roadmap is not replaced until the final candidate completes the closure gate and independent review returns **0 BLOCKER / 0 MAJOR** against the exact final Review World.
+The full v231 snapshot is preserved separately in persistent project artifact storage under the exact filename above. The canonical roadmap must not be replaced until a later candidate completes the closure gate and independent review returns **0 BLOCKER / 0 MAJOR** against the exact final Review World.
 
-## State reached through v224
+## State reached through v231
 
-The roadmap is now a contract-driven architecture for deterministic universal command semantics, Prime Exec routing, resource identity/projection, policy/consent composition, journal/receipt truth, terminal input/output/control semantics, runtime/provider routing, development workflows, Hunter-assisted execution, proof-phase dependencies and freeze-review closure.
+The roadmap now defines a contract-driven architecture for deterministic universal command semantics, Prime Exec routing, resource identity/projection, policy/consent composition, attempt-journal/receipt truth, terminal input/output/control semantics, runtime/provider routing, development workflows, Hunter-assisted execution, proof-phase dependencies and freeze-review closure.
 
-Recent closures since the prior v215 checkpoint include:
+Material closures added after the v224 checkpoint include:
 
-- Runtime/Command Descriptor closed-field manifest and backend/runtime lifecycle truth;
-- frozen Route Selection Input Manifest with explicit provider-cost/expected-latency ranking families and no hidden ranking inputs;
-- exact Foreground Input Recording Policy roster and Foreground Recording Transaction semantics;
-- exact Semantic Applicability Stability modes;
-- privacy-noninterfering route-failure aggregation and visible-universe absence rules;
-- Script Recognizer Set closure so first-match/order/UNKNOWN cannot silently choose runtime ownership;
-- Decision/evidence propagation parity for semantic-claim sets, bootstrap-source sets, managed-environment sets, route-selection inputs and recording transactions;
-- authoritative Contract 23 binding of Admission Coherence Set, applicable-policy set, consumed Capability Guarantee Evidence and route-failure privacy projection;
-- explicit durable `ADMISSION_REJECTED` evidence schema.
+- deterministic Primary Outcome Refinement / no discretionary “more specific” result selection;
+- exact three-state Terminal Input Ownership machine;
+- atomic Prompt↔child Input Ownership Handoff Commit and crash-safe mutual exclusion;
+- Prime-minted Submission Origin & Interaction Authority, preventing caller/child/stale-UI spoofing;
+- closed Prompt Workload Projection State roster for foreground/suspended/background/terminal/unknown workloads;
+- exact-runtime owner claimant-set closure with generation/cardinality/finality binding and stale-resolution invalidation;
+- additional Requirement → Route Decision → Attempt Journal → Receipt propagation closure for semantic-claim sets, managed environment, bootstrap-source sets, route-selection inputs, recording transactions and script-recognizer sets.
 
-## Current mechanical state
+## Last mechanically proven state
 
-Latest structural scan against v224 reports:
+The last complete numbered-contract structural scan performed before the final v225–v231 normative additions reported:
 
 - **100 numbered contracts / 100 unique**;
 - **zero broken numbered-contract references**;
 - no duplicate numbered contracts.
 
-A quick primary-outcome parity parser showed extra PT0 coverage tokens only because that coverage section deliberately includes the same manifest's diagnostic-code block and the `Executable Resolution Scope` enum. This is not being treated as a parity defect; the final Review World still requires the formal manifest/role/lifecycle closure checker.
+Because v225–v231 added normative material afterward, those mechanical results are intentionally treated as stale for v231. A future continuation must rerun the complete structural/registry/closure checks against the exact resumed candidate before claiming review readiness.
 
-## Remaining rule
+## Archive / continuation rule
 
-Continue saturation review from **v224**. Do not treat this checkpoint as completion. Stop only after a fresh whole-document hostile pass produces no new material BLOCKER/MAJOR finding, then hand the exact final candidate digest to an independent reviewer. Any normative correction after that review creates a new Review World and requires another review.
+v231 is an **archived unfrozen snapshot**, not a freeze candidate and not reviewer-approved. If work resumes, recover this exact digest first, then continue saturation from v231 or create a successor Review World. Do not infer that the self-audit reached the zero-find condition merely because the snapshot was archived.
