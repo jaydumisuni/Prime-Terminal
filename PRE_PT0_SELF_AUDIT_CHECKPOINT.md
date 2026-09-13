@@ -41,3 +41,19 @@ Because v225–v231 added normative material afterward, those mechanical results
 ## Archive / continuation rule
 
 v231 is an **archived unfrozen snapshot**, not a freeze candidate and not reviewer-approved. If work resumes, recover this exact digest first, then continue saturation from v231 or create a successor Review World. Do not infer that the self-audit reached the zero-find condition merely because the snapshot was archived.
+
+## Cookpit roadmap-completion handoff
+
+The durable Cookpit transfer contract is now `COOKPIT_ROADMAP_FINISH_HANDOFF.md`.
+
+That handoff defines:
+
+- `KRATOS` as the execution machine for the transferred work;
+- the archived v231 digest above as the starting recovery authority;
+- Cookpit's mission as **roadmap completion only**;
+- the required saturation → fresh mechanical closure → independent review → repair/re-review loop;
+- **0 BLOCKER / 0 MAJOR against the exact final Review World** as a required freeze condition;
+- a hard stop at roadmap freeze;
+- **PT0 implementation as a separate later Cookpit generation**, not an automatic continuation.
+
+The handoff document does not itself activate Cookpit; transfer/activation is intentionally separate from Prime Terminal roadmap documentation.
